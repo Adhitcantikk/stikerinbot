@@ -6,7 +6,7 @@ let handler = async (m, { conn, participants, command, text }) => {
         who = member[Math.floor(Math.random() * member.length)]
     }
     let jawab = `
-Yang paling *${command}* di grup ini
+Yang paling *${command}* disini ini
 adalah @${who.replace(/@.+/, '')}
     `.trim()
     let saha = [who]
