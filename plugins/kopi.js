@@ -8,7 +8,7 @@ let handler = async (m, { conn, args }) => {
   if (json.file) conn.sendFile(m.chat, json.file, "kopi.png", "kopi", m);
   else throw json;
 };
-handler.help = ["coffee", "kopi"];
+handler.help = ["kopi"];
 handler.tags = ["internet"];
 
 handler.command = /^(kopi|coffee)$/i;
