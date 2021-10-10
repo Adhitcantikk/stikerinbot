@@ -11,5 +11,5 @@ arr = txt.split`\n`
 handler.help = ['asupan']
 handler.tags = ['fun']
 handler.command = /^(asupan)$/i
-
+handler.limit = true
 module.exports = handler
