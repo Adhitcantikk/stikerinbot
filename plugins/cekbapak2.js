@@ -1,3 +1,4 @@
+if (!m.mentionedJid[0]) throw `tag yang mau dicek bapacknya`
 let handler = async (m, { conn, command, text }) => {
   conn.reply(m.chat, `
 ${pickRandom(['Wah Mantap Dia Masih Punya Bapack\nPasti Bapack Nya Kuli :v\nAwowkwokwwok\n*#CandabOs*', 'Aowkwwo Disini Ada Yteam:v\nSabar Bro Ga Punya Bapack\n*#Camda*', 'Bjir Bapack Dia Ternyata Sudah Cemrai\nSedih Bro Gua Liatnya\nTapi Nih Tapi :v\nTetep Ae Dia Yteam Aowkwowkw Ngakak :v', 'Jangan #cekbapaknya terus Broo :v\nKasian Kalo Beneran Dia Yteam\nNtar Tersinggung Kan\nYahahaha Hayyuk:v'])}
