@@ -8,7 +8,7 @@ let handler = async (m, {}) => {
   if (json.joke) m.reply(json.joke);
   else throw json;
 };
-handler.help = ["joke", "jokes"];
+handler.help = ["jokes"];
 handler.tags = ["fun"];
 handler.command = /^(joke|jokes)$/i;
 
