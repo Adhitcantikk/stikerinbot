@@ -12,8 +12,8 @@ async function handler(m) {
   let onW2 = await this.isOnWhatsApp(njid2) || { isBusiness: false }
   
   let name3 = 'WhatsApp'
-  number2 = owner[3].replace(/[^0-9]/g, '')
-  let njid3 = number2 + '@s.whatsapp.net'
+  number2 = owner[2].replace(/[^0-9]/g, '')
+  let njid3 = number3 + '@s.whatsapp.net'
   let onW3 = await this.isOnWhatsApp(njid3) || { isBusiness: false }
 
   this.sendMessage(m.chat, {
