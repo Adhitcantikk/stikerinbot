@@ -16,8 +16,8 @@ let handler = async (m, { conn }) => {
   );
   const sticker = await createSticker(animatedGif, {
     type: StickerTypes.FULL,
-    pack: "petpet",
-    author: "fatur",
+    pack: global.packname,
+    author: global.author,
   });
   await conn.sendMessage(m.chat, sticker, MessageType.sticker, {
     quoted: m,
