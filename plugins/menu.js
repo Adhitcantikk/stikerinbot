@@ -7,9 +7,9 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
   `.trimStart(),
-  header: '*🌹 %category 🌹*\n',
+  header: '\n*────「 %category 」───*\n',
   body: '🔖 _%cmd_ %islimit %isPremium',
-  footer: '\n🎀\n\n',
+  footer: '\n',
   after: `
 `,
 }
@@ -169,8 +169,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, kak ${name} 🐤`.trim(),
-          "description": "Pilih menu *MIKU-BOT* di bawah ya kak!",
+          "title": `
+          ${ucapan()}, kak ${name} 🐤
+          `.trim(),
+          "description": "Silahkan pilih menu *LUCU-BOT* di bawah ya kak!",
           "buttonText": "Pilih Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -366,7 +368,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.sendButtonLoc(m.chat, await (await fetch(global.fla)).buffer(), text.trim(), '© adhit', 'List Menu', '.menu', m)
+    await conn.sendButtonLoc(m.chat, await (await fetch(global.fla)).buffer(), text.trim(), '© https://wa.me/qr/6WHRKLU2IZNBB1', 'List Menu', '.menu', m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
