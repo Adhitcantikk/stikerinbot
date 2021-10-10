@@ -1,7 +1,7 @@
 let fetch = require("node-fetch");
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `Pokemonnya mana?`;
+  if (!args[0]) throw `Mama pokemonnya mana?`;
   let res = await fetch(
     API("https://some-random-api.ml", "/pokedex", { pokemon: args[0] })
   );
@@ -17,7 +17,8 @@ Height: ${json.height}
 Weight: ${json.weight}
 Base experience: ${json.base_experience}
 Gender: ${json.gender}
-Egg groups: ${json.egg_groups}\n
+Egg groups: ${json.egg_groups}
+
 STATS
 Hp: ${json.stats.hp}
 Attack: ${json.stats.attack}
@@ -25,14 +26,15 @@ Defense: ${json.stats.defense}
 Sp atk: ${json.stats.sp_atk}
 Sp def: ${json.stats.sp_def}
 Speed: ${json.stats.speed}
-Total: ${json.stats.total}\n
+Total: ${json.stats.total}
+
 FAMILY
 Evolution Stage: ${json.family.evolutionStage}
-Evolution Line: ${json.family.evolutionLine}\n
+Evolution Line: ${json.family.evolutionLine}
+
 DESCRIPTION
 ${json.description}
-Generation: ${json.generation}\n\n
-~fatur
+Generation: ${json.generation}
   `.trim();
   if (!json.error)
     await conn.sendFile(
@@ -44,7 +46,7 @@ Generation: ${json.generation}\n\n
     );
   else throw json.error;
 };
-handler.help = ["pokemon"].map((v) => v + " <pokemon>");
+handler.help = ["pokemon"].map((v) => v + " <nama pokemon>");
 handler.tags = ["internet"];
 handler.command = /^(pokemon|pokedex)$/i;
 
