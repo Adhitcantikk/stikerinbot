@@ -4,19 +4,20 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   let filt = `
 balas foto dengan caption opsi di bawah ini:
 
-┌〔 Opsi 〕
-├ greyscale
-├ invert
-├ invertgreyscale
-├ brightness
-├ threshold
-├ sepia
-├ red
-├ green
-├ blue
-├ blurple
-├ blurple2
-└────
+*🌹 Opsi 🌹*
+
+🔖 greyscale
+🔖 invert
+🔖 invertgreyscale
+🔖 brightness
+🔖 threshold
+🔖 sepia
+🔖 red
+🔖 green
+🔖 blue
+🔖 blurple
+🔖 blurple2
+🎀
 `.trim();
   if (!args[0]) throw filt;
   let q = m.quoted ? m.quoted : m;
