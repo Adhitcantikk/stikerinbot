@@ -385,7 +385,7 @@ module.exports = {
           for (let user of participants) {
             // let pp = './src/avatar_contact.png'
             let pp = 'https://telegra.ph/file/9da57ee9a94820b6b436c.jpg'
-            let ppgc = 'https://telegra.ph/file/9da57ee9a94820b6b436c.jpg'
+            // let ppgc = 'https://telegra.ph/file/9da57ee9a94820b6b436c.jpg'
             try {
               pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
               ppgc = await uploadImage(await (await fetch(await this.getProfilePicture(jid))).buffer())
@@ -490,7 +490,7 @@ global.dfail = (type, m, conn) => {
     group: '*Perintah ini hanya bisa di dalam Grup*',
     private: '*Perintah ini hanya bisa di Chat Pribadi*',
     admin: '*Perintah ini hanya untuk Admin Grup*',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini',
+    botAdmin: 'Saya bukan *Admin* kak',
     unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n*#daftar nama.umur*\n\nContoh: *#daftar Rasel.18*',
     nsfw: '*NSFW tidak aktif*'
   }[type]
