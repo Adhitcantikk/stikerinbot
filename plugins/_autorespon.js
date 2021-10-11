@@ -57,17 +57,17 @@ handler.all = async function (m, { isBlocked }) {
             this.sendFile(global.owner[0] + '@s.whatsapp.net', fs.readFileSync('./database.json'), 'database.json', '', 0, 0, { mimetype: 'application/json' })
             setting.backupDB = new Date() * 1
         }
-    }
+    //}
 
     // update status
-    if (new Date() * 1 - setting.status > 1000) {
-        let _uptime = process.uptime() * 1000
-        let uptime = clockString(_uptime)
-        await this.setStatus(`Aktif selama ${uptime}  Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'}  miku-bot oleh adhit`).catch(_ => _)
-        setting.status = new Date() * 1
-    }
+    //if (new Date() * 1 - setting.status > 1000) {
+        //let _uptime = process.uptime() * 1000
+        //let uptime = clockString(_uptime)
+        //await this.setStatus(`Aktif selama ${uptime}  Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'}  miku-bot oleh adhit`).catch(_ => _)
+        //setting.status = new Date() * 1
+    //}
 
-}
+//}
 
 module.exports = handler
 
