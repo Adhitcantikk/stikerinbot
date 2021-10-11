@@ -7,7 +7,7 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
   `.trimStart(),
-  header: '\n*────「 %category 」───*\n',
+  header: '\n*────「 %category 」────*\n',
   body: '🔖 _%cmd_ %islimit %isPremium',
   footer: '\n',
   after: `
