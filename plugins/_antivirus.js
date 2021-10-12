@@ -8,7 +8,7 @@ handler.all = async function (m, { isBotAdmin }) {
             content: m.msg,
             sender: m.sender
         }
-        await this.modifyChat(m.chat, 'clear', { // ini gosah di blok cok nanti kena pirtex lag nanges:v
+        //await this.modifyChat(m.chat, 'clear', { // ini gosah di blok cok nanti kena pirtex lag nanges:v
             includeStarred: false
         }).catch(console.log)
     }
