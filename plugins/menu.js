@@ -172,7 +172,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "title": `
           ${ucapan()}, kak ${name} 🐤
           `.trim(),
-          "description": "Silahkan pilih menu *LUCU-BOT* di bawah ya kak!",
+          "description": "Silahkan pilih menu *BOT* di bawah ya kak!",
           "buttonText": "Pilih Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
