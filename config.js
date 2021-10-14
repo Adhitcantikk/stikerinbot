@@ -28,9 +28,8 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = '𝑰𝒕\'𝒔  𝑴𝒆  𝑹𝒂𝒔𝒆𝒍 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfollback dm👻'
-global.author = '😘😍🥵😈🥵🤩😝🥵👻🤗🤩😎🥰🥵🥰😍😋☺🥵😈\n\n\n\n\n\n\n\n\n\n\n\n\n@rasel.ganz\n\n\n         ☺\n\n\n\n    😘😍🥰'
-
+global.packname = 'M\nI\nK\nU\n\nB\nO\nT'
+global.author = 'Create your own sticker\n\nwa.me6282256048971'
 global.wait = '*Tunggu sebentar ya sayang*'
 global.eror = '```Server Error```'
 global.fla = 'https://telegra.ph/file/5ea48f989976aa1e18424.jpg'
