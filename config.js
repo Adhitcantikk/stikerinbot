@@ -28,10 +28,10 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'M\nI\nK\nU\n\nB\nO\nT'
-global.author = 'Create your own sticker\n\nwa.me6282256048971'
+global.packname = '💞'
+global.author = '×͜×
 global.wait = '*Tunggu sebentar ya sayang*'
-global.eror = '```Server Error```'
+global.eror = 'Maaf terjadi kesalahan'
 global.fla = 'https://telegra.ph/file/5ea48f989976aa1e18424.jpg'
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
 
